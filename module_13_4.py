@@ -9,7 +9,7 @@ bot = Bot(token=api)
 dp = Dispatcher(bot, storage=MemoryStorage())
 
 
-class UserState(UserStates):
+class UserState(StatesGroup):
 
     age = State()
     growth = State()
